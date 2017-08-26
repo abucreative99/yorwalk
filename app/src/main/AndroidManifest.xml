@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.aabello.iwalk">
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true"/>
+    <uses-feature android:name="android.hardware.sensor.stepdetector"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name="com.aabello.iwalk.model.db.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.aabello.iwalk.ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aabello.iwalk.ui.TargetActivity"
+            android:parentActivityName="com.aabello.iwalk.ui.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.aabello.iwalk.ui.UserDataActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.aabello.iwalk.ui.WalkTestMonitorActivity"
+            android:parentActivityName="com.aabello.iwalk.ui.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.aabello.iwalk.ui.WalkTestSummaryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.aabello.iwalk.ui.WalkTestReportsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.aabello.iwalk.ui.WalkTestChartActivity">
+        </activity>
+    </application>
+
+</manifest>

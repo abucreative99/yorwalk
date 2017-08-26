@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    tools:context=".ui.UserDataActivity">
+
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/age_label"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/genderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ageLabel"
+        android:layout_below="@+id/ageLabel"
+        android:layout_marginTop="30dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/gender_label"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/heightLabel"
+        android:labelFor="@+id/ftEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/genderLabel"
+        android:layout_below="@+id/genderLabel"
+        android:layout_marginTop="30dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/height_label"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/weightLabel"
+        android:labelFor="@+id/stEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/heightLabel"
+        android:layout_marginTop="60dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/weight_label"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/smokingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/weightLabel"
+        android:layout_marginTop="60dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/smoking_habit_label"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="16dp"/>
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ftEditText"
+        android:layout_alignStart="@+id/genderRadioGroup"
+        android:layout_alignTop="@+id/ageLabel"
+        android:inputType="number"
+        />
+
+    <Spinner
+        android:id="@+id/smokingHabitSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/smokingLabel"
+        android:layout_toEndOf="@+id/smokingLabel"
+        android:layout_marginStart="22dp"
+        android:layout_alignBottom="@+id/smokingLabel"/>
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/genderLabel"
+        android:layout_toEndOf="@+id/genderLabel"
+        android:layout_alignBottom="@+id/genderLabel"
+        android:layout_alignStart="@+id/smokingHabitSpinner">
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/male_label"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/female_label"
+            android:textSize="16sp"
+            android:layout_marginEnd="32dp"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/heightRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/heightLabel"
+        android:layout_toEndOf="@+id/heightLabel"
+        android:layout_alignBottom="@+id/heightLabel"
+        android:layout_alignStart="@+id/smokingHabitSpinner">
+        <RadioButton
+            android:id="@+id/ftRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/ft_label"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/cmRadioButton"
+            android:labelFor="@+id/cmEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cm_label"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ftEditText"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/heightRadioGroup"
+        android:layout_below="@+id/heightRadioGroup"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number|numberDecimal"/>
+
+    <EditText
+        android:id="@+id/cmEditText"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ftEditText"
+        android:layout_alignBottom="@+id/ftEditText"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/ftEditText"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number|numberDecimal"
+        android:labelFor="@+id/cmRadioButton"/>
+
+    <RadioGroup
+        android:id="@+id/weightRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weightLabel"
+        android:layout_toEndOf="@+id/weightLabel"
+        android:layout_alignBottom="@+id/weightLabel"
+        android:layout_alignStart="@+id/smokingHabitSpinner"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/stRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/st_label"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/kgRadioButton"
+            android:labelFor="@+id/kgEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/kg_label"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/stEditText"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/weightRadioGroup"
+        android:layout_below="@+id/weightRadioGroup"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number|numberDecimal"/>
+
+    <EditText
+        android:id="@+id/kgEditText"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stEditText"
+        android:layout_alignEnd="@+id/gr"
+        android:layout_alignTop="@+id/stEditText"
+        android:layout_marginStart="24dp"
+        android:layout_toRightOf="@+id/stEditText"
+        android:enabled="false"
+        android:inputType="number|numberDecimal"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:background="@drawable/button_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_button"
+        android:layout_marginBottom="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</android.widget.RelativeLayout>

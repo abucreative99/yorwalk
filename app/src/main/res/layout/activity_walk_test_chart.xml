@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="8dp">
+    <LinearLayout
+        android:id="@+id/periodButtonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/wtWeeklyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:text="WEEKLY"/>
+
+        <Button
+            android:id="@+id/wtMonthlyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:layout_weight="1"
+            android:text="MONTHLY"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardDistance"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2sp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp" >
+
+                    <com.jjoe64.graphview.GraphView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dip"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/walkTestDistanceGraphView" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/walkTestDistanceGraphView"
+                        android:layout_marginTop="8dp"
+                        android:maxLines="3"
+                        android:text="Total Distance Graph"
+                        android:textAlignment="center"
+                        android:textColor="#222"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardPainFreeDistance"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2sp"
+                app:cardUseCompatPadding="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <com.jjoe64.graphview.GraphView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dip"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/walkTestPainFreeDistanceGraphView" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/walkTestPainFreeDistanceGraphView"
+                        android:layout_marginTop="8dp"
+                        android:maxLines="3"
+                        android:text="Pain Free Distance Graph"
+                        android:textAlignment="center"
+                        android:textColor="#222"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

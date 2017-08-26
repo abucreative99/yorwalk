@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WalkTestSummaryActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Welldone!!!"
+        android:textColor="#F35821"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="You have done"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/stepsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:textColor="#59C9A5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:textSize="30sp"
+        tools:text="2500 Steps"/>
+
+    <TextView
+        android:id="@+id/distanceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stepsValue"
+        android:textColor="#23395B"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:textSize="30sp"
+        tools:text="0.89 Km Distance"/>
+
+    <TextView
+        android:id="@+id/painFreeDistanceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0.51 Km (PFWD)"
+        android:textColor="#D81E5B"
+        android:layout_below="@+id/distanceValue"
+        android:textSize="30sp"
+        android:layout_marginTop="27dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/viewReportsButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="View Reports"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/painFreeDistanceValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+</RelativeLayout>

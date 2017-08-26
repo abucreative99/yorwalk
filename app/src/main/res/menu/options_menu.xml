@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/learnOption"
+        android:title="Learn"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/targetOption"
+        android:title="Set Target"/>
+    <item
+        android:id="@+id/disclaimerOption"
+        android:title="Disclaimer"/>
+    <item
+        android:id="@+id/userData"
+        android:title="User Data"/>
+    <item
+        android:id="@+id/aboutOption"
+        android:title="About"/>
+</menu>

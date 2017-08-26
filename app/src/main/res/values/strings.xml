@@ -1,0 +1,80 @@
+<resources>
+
+    <string name="app_name">iWalk</string>
+
+    //bottom navigation titles
+    <string name="title_home">Home</string>
+    <string name="title_walktest">6min Test</string>
+    <string name="title_learn">Learn</string>
+    <string name="title_reports">Reports</string>
+
+    //walk test page parameters
+    <string name="step_title">Step %1$s of %2$s</string>
+    <string name="page0_title">Walk Test</string>
+    <string name="page0_text">This function allows you to measure your walking ability.
+        This is important because PAD affects your ability to walk.</string>
+    <string name="page1_title">Walk Test Location</string>
+    <string name="page1_text">The test is best performed in an outside area that is flat and where
+        you will not be slowed down or obstructed by the environment or other people.</string>
+    <string name="page2_title">Walk Test Instructions</string>
+    <string name="page2_text">The object of this test is to walk as far as possible for 6 minutes.
+        You should not run or jog. Six minutes is a long time to walk, so you will be exerting
+        yourself. You may get out of breath or develop leg pain. You can slow down, stop, and
+        rest if needed, but you should resume walking as soon as you are able.</string>
+    <string name="page3_title">Walk Test Pain Button</string>
+    <string name="page3_text">During the 6-minute walk test, you will have an option to indicate
+        when you have first experienced leg pain. If you want to use this option, please press
+        the pain button, which is shown below, when you first notice leg pain.</string>
+    <string name="page4_title">Walk Test – Ready?</string>
+    <string name="page4_text">When you are ready to go, press the START button below and wait for a
+        count down to 3. Your phone will beep and vibrate signaling u to start walking.
+        when the 6 minutes is over, at which time the test is complete and you will be
+        able to check your results.</string>
+
+    //walk test activity
+    <string name="prev_button_title">Prev</string>
+    <string name="next_button_title">Next</string>
+    <string name="start_button_title">Start</string>
+    <string name="walk_test_step_image">Walk Test Step Image</string>
+
+    //target activity
+    <string name="target_label1">I will take</string>
+    <string name="target_label2">a day</string>
+    <string name="save_button">SAVE</string>
+
+    //about dialog
+    <string name="about_dialog_title">About</string>
+    <string name="about_dialog_message">This App is for Patients with Intermittent Claudication</string>
+
+    //disclaimer dialog
+    <string name="disclaimer_dialog_title">iWalk Disclaimer</string>
+    <string name="disclaimer_dialog_message">iWalk is intended for RESEARCH AND LEARNING PURPOSES ONLY.
+        This application is designed to support Self-managed Exercise and to test you walking ability.
+        You must not rely on the information facilitated by this application as an alternative to
+        medical advice from your healthcare provider</string>
+
+    //dialog box titles
+    <string name="accept_button_label">ACCEPT</string>
+    <string name="reject_button_label">REJECT</string>
+    <string name="yes_button_label">YES</string>
+    <string name="no_button_label">NO</string>
+    <string name="ok_button_label">OK</string>s
+
+    //user data activity
+    <string name="height_label">Height</string>
+    <string name="gender_label">Gender</string>
+    <string name="age_label">Age</string>
+    <string name="weight_label">Weight</string>
+    <string name="smoking_habit_label">Smoking \n Habit</string>
+    <string name="male_label">M</string>
+    <string name="ft_label">FT</string>
+    <string name="female_label">F</string>
+    <string name="cm_label">CM</string>
+    <string name="kg_label">KG</string>
+    <string name="st_label">ST</string>
+
+    //data transfer keys
+    <string name="key_no_of_steps">no_of_steps</string>
+    <string name="key_pain_free_distance">pain_free_distance</string>
+    <string name="confirm_dialog_title">Confirm</string>
+</resources>

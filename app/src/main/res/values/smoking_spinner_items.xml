@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="smoking_habit_array">
+        <item>select habit</item>
+        <item>Non-smoker</item>
+        <item>Ex-smoker</item>
+        <item>Current-smoker</item>
+    </string-array>
+</resources>
